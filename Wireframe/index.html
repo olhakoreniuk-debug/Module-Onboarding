@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Wireframe</h1>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </header>
-    <main>
-      <article>
-        <img src="placeholder.svg" alt="" />
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates. Quisquam, voluptates.
-        </p>
-        <a href="">Read more</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Dev Basics: README, Wireframes & Git Branches</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Web Dev Basics</h1>
+    <p>A quick guide to README files, wireframes, and Git branches</p>
+  </header>
+
+  <main>
+    <section class="articles" aria-label="Learning articles">
+
+      <!-- Top main article -->
+      <article class="highlight">
+        <img src="placeholder.svg" alt="Simple wireframe diagram example" />
+        <div class="content">
+          <h2>What is the purpose of a README file?</h2>
+          <p>
+            A README file is the first place visitors look when exploring a repository.  
+            It describes what the project does, how to install and use it, and how to contribute.  
+            A clear README saves time and makes collaboration easier.
+          </p>
+          <a href="https://www.makeareadme.com/" target="_blank" rel="noopener noreferrer">
+            Learn more about README files
+          </a>
+        </div>
       </article>
-    </main>
-    <footer>
-      <p>
-        This is the default, provided code and no changes have been made yet.
-      </p>
-    </footer>
-  </body>
+
+      <!-- Two smaller articles -->
+      <div class="row">
+        <article>
+          <img src="placeholder.svg" alt="Wireframe layout sketch" />
+          <div class="content">
+            <h2>What is the purpose of a wireframe?</h2>
+            <p>
+              A wireframe is a basic, visual guide that represents the structure of a web page or app.  
+              It helps designers and developers map out layout and functionality before coding or applying design details.
+            </p>
+            <a href="https://www.productplan.com/glossary/wireframe/"
+               target="_blank" rel="noopener noreferrer">
+              Explore what a wireframe is
+            </a>
+          </div>
+        </article>
+
+        <article>
+          <img src="placeholder.svg" alt="Git branches diagram illustration" />
+          <div class="content">
+            <h2>What is a branch in Git?</h2>
+            <p>
+              A branch in Git is an independent line of development.  
+              Developers use branches to experiment safely or add new features.  
+              When ready, changes are merged back into the main branch.
+            </p>
+            <a href="https://www.atlassian.com/git/tutorials/using-branches"
+               target="_blank" rel="noopener noreferrer">
+              Learn about Git branches
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 – This project was built following the MigraCode Wireframe exercise.</p>
+  </footer>
+</body>
 </html>
+
