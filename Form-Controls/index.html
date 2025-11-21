@@ -3,52 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Controls</title>
-  <link rel="stylesheet" href="style.css">
+  <title>T-shirt order form</title>
 </head>
-
 <body>
-  <h1>Form Controls Practice</h1>
+  <main>
+    <h1>Order your t-shirt</h1>
 
-  <form>
+    <p>Please confirm your details and choose your t-shirt colour and size.</p>
 
-    <!-- TEXT INPUT -->
-    <label for="name">Full Name</label>
-    <input id="name" type="text" placeholder="Enter your name" required>
+    <form>
 
-    <!-- EMAIL INPUT -->
-    <label for="email">Email</label>
-    <input id="email" type="email" placeholder="example@mail.com" required>
+      <!-- CUSTOMER NAME -->
+      <div>
+        <label for="customer-name">Full name</label>
+        <input
+          id="customer-name"
+          name="customer-name"
+          type="text"
+          minlength="2"
+          required
+        >
+      </div>
 
-    <!-- NUMBER INPUT -->
-    <label for="age">Age</label>
-    <input id="age" type="number" min="0" max="120">
+      <!-- CUSTOMER EMAIL -->
+      <div>
+        <label for="customer-email">Email address</label>
+        <input
+          id="customer-email"
+          name="customer-email"
+          type="email"
+          required
+        >
+      </div>
 
-    <!-- RADIO BUTTONS -->
-    <p>Your role:</p>
-    <label><input type="radio" name="role" value="student"> Student</label>
-    <label><input type="radio" name="role" value="developer"> Developer</label>
+      <!-- T-SHIRT COLOUR (3 OPTIONS) -->
+      <fieldset>
+        <legend>T-shirt colour</legend>
 
-    <!-- CHECKBOX -->
-    <label><input type="checkbox" id="agree"> I agree with the terms</label>
+        <div>
+          <input
+            id="colour-black"
+            name="tshirt-colour"
+            type="radio"
+            value="black"
+            required
+          >
+          <label for="colour-black">Black</label>
+        </div>
 
-    <!-- SELECT -->
-    <label for="city">Choose your city</label>
-    <select id="city">
-      <option value="">-- Select --</option>
-      <option>Barcelona</option>
-      <option>Kyiv</option>
-      <option>Warsaw</option>
-    </select>
+        <div>
+          <input
+            id="colour-white"
+            name="tshirt-colour"
+            type="radio"
+            value="white"
+          >
+          <label for="colour-white">White</label>
+        </div>
 
-    <!-- TEXTAREA -->
-    <label for="bio">Short bio</label>
-    <textarea id="bio" rows="4"></textarea>
+        <div>
+          <input
+            id="colour-blue"
+            name="tshirt-colour"
+            type="radio"
+            value="blue"
+          >
+          <label for="colour-blue">Blue</label>
+        </div>
+      </fieldset>
 
-    <!-- SUBMIT -->
-    <button type="submit">Submit</button>
+      <!-- T-SHIRT SIZE (6 OPTIONS) -->
+      <fieldset>
+        <legend>T-shirt size</legend>
 
-  </form>
+        <div>
+          <input
+            id="size-xs"
+            name="tshirt-size"
+            type="radio"
+            value="XS"
+            required
+          >
+          <label for="size-xs">XS</label>
+        </div>
+
+        <div>
+          <input
+            id="size-s"
+            name="tshirt-size"
+            type="radio"
+            value="S"
+          >
+          <label for="size-s">S</label>
+        </div>
+
+        <div>
+          <input
+            id="size-m"
+            name="tshirt-size"
+            type="radio"
+            value="M"
+          >
+          <label for="size-m">M</label>
+        </div>
+
+        <div>
+          <input
+            id="size-l"
+            name="tshirt-size"
+            type="radio"
+            value="L"
+          >
+          <label for="size-l">L</label>
+        </div>
+
+        <div>
+          <input
+            id="size-xl"
+            name="tshirt-size"
+            type="radio"
+            value="XL"
+          >
+          <label for="size-xl">XL</label>
+        </div>
+
+        <div>
+          <input
+            id="size-xxl"
+            name="tshirt-size"
+            type="radio"
+            value="XXL"
+          >
+          <label for="size-xxl">XXL</label>
+        </div>
+      </fieldset>
+
+      <!-- SUBMIT BUTTON -->
+      <button type="submit">Submit order</button>
+    </form>
+  </main>
 </body>
 </html>
-
