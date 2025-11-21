@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Controls</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Form Controls Practice</h1>
+
+  <form>
+
+    <!-- TEXT INPUT -->
+    <label for="name">Full Name</label>
+    <input id="name" type="text" placeholder="Enter your name" required>
+
+    <!-- EMAIL INPUT -->
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="example@mail.com" required>
+
+    <!-- NUMBER INPUT -->
+    <label for="age">Age</label>
+    <input id="age" type="number" min="0" max="120">
+
+    <!-- RADIO BUTTONS -->
+    <p>Your role:</p>
+    <label><input type="radio" name="role" value="student"> Student</label>
+    <label><input type="radio" name="role" value="developer"> Developer</label>
+
+    <!-- CHECKBOX -->
+    <label><input type="checkbox" id="agree"> I agree with the terms</label>
+
+    <!-- SELECT -->
+    <label for="city">Choose your city</label>
+    <select id="city">
+      <option value="">-- Select --</option>
+      <option>Barcelona</option>
+      <option>Kyiv</option>
+      <option>Warsaw</option>
+    </select>
+
+    <!-- TEXTAREA -->
+    <label for="bio">Short bio</label>
+    <textarea id="bio" rows="4"></textarea>
+
+    <!-- SUBMIT -->
+    <button type="submit">Submit</button>
+
+  </form>
+</body>
 </html>
+
