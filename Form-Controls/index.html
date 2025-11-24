@@ -13,8 +13,10 @@
 
     <form>
 
-      <!-- CUSTOMER NAME -->
-      <div>
+      <!-- CUSTOMER DETAILS (NAME + EMAIL IN ONE BOX) -->
+      <fieldset>
+        <legend>Customer details</legend>
+
         <label for="customer-name">Full name</label>
         <input
           id="customer-name"
@@ -23,123 +25,112 @@
           minlength="2"
           required
         >
-      </div>
 
-      <!-- CUSTOMER EMAIL -->
-      <div>
-        <label for="customer-email">Email address</label>
+        <label for="customer-email">Email</label>
         <input
           id="customer-email"
           name="customer-email"
           type="email"
           required
         >
-      </div>
+      </fieldset>
 
       <!-- T-SHIRT COLOUR (3 OPTIONS) -->
       <fieldset>
         <legend>T-shirt colour</legend>
 
-        <div>
+        <label>
           <input
-            id="colour-black"
             name="tshirt-colour"
             type="radio"
             value="black"
             required
           >
-          <label for="colour-black">Black</label>
-        </div>
+          Black
+        </label>
 
-        <div>
+        <label>
           <input
-            id="colour-white"
             name="tshirt-colour"
             type="radio"
             value="white"
           >
-          <label for="colour-white">White</label>
-        </div>
+          White
+        </label>
 
-        <div>
+        <label>
           <input
-            id="colour-blue"
             name="tshirt-colour"
             type="radio"
             value="blue"
           >
-          <label for="colour-blue">Blue</label>
-        </div>
+          Blue
+        </label>
       </fieldset>
 
       <!-- T-SHIRT SIZE (6 OPTIONS) -->
       <fieldset>
         <legend>T-shirt size</legend>
 
-        <div>
+        <label>
           <input
-            id="size-xs"
             name="tshirt-size"
             type="radio"
             value="XS"
             required
           >
-          <label for="size-xs">XS</label>
-        </div>
+          XS
+        </label>
 
-        <div>
+        <label>
           <input
-            id="size-s"
             name="tshirt-size"
             type="radio"
             value="S"
           >
-          <label for="size-s">S</label>
-        </div>
+          S
+        </label>
 
-        <div>
+        <label>
           <input
-            id="size-m"
             name="tshirt-size"
             type="radio"
             value="M"
           >
-          <label for="size-m">M</label>
-        </div>
+          M
+        </label>
 
-        <div>
+        <label>
           <input
-            id="size-l"
             name="tshirt-size"
             type="radio"
             value="L"
           >
-          <label for="size-l">L</label>
-        </div>
+          L
+        </label>
 
-        <div>
+        <label>
           <input
-            id="size-xl"
             name="tshirt-size"
             type="radio"
             value="XL"
           >
-          <label for="size-xl">XL</label>
-        </div>
+          XL
+        </label>
 
-        <div>
+        <label>
           <input
-            id="size-xxl"
             name="tshirt-size"
             type="radio"
             value="XXL"
           >
-          <label for="size-xxl">XXL</label>
-        </div>
+          XXL
+        </label>
       </fieldset>
 
-      <!-- SUBMIT BUTTON -->
+      <!-- SUBMIT -->
       <button type="submit">Submit order</button>
+
     </form>
   </main>
 </body>
