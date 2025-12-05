@@ -1,27 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-shirt order form</title>
+</head>
+<body>
+  <main>
+    <h1>Order your t-shirt</h1>
+
+    <p>Please confirm your details and choose your t-shirt colour and size.</p>
+
+    <form>
+
+      <!-- CUSTOMER DETAILS (NAME + EMAIL IN ONE BOX) -->
+      <fieldset>
+        <legend>Customer details</legend>
+
+        <label for="customer-name">Full name</label>
+        <input
+          id="customer-name"
+          name="customer-name"
+          type="text"
+          minlength="2"
+          required
+        >
+
+        <label for="customer-email">Email</label>
+        <input
+          id="customer-email"
+          name="customer-email"
+          type="email"
+          required
+        >
+      </fieldset>
+
+      <!-- T-SHIRT COLOUR (3 OPTIONS) -->
+      <fieldset>
+        <legend>T-shirt colour</legend>
+
+        <label>
+          <input
+            name="tshirt-colour"
+            type="radio"
+            value="black"
+            required
+          >
+          Black
+        </label>
+
+        <label>
+          <input
+            name="tshirt-colour"
+            type="radio"
+            value="white"
+          >
+          White
+        </label>
+
+        <label>
+          <input
+            name="tshirt-colour"
+            type="radio"
+            value="blue"
+          >
+          Blue
+        </label>
+      </fieldset>
+
+      <!-- T-SHIRT SIZE (6 OPTIONS) -->
+      <fieldset>
+        <legend>T-shirt size</legend>
+
+        <label>
+          <input
+            name="tshirt-size"
+            type="radio"
+            value="XS"
+            required
+          >
+          XS
+        </label>
+
+        <label>
+          <input
+            name="tshirt-size"
+            type="radio"
+            value="S"
+          >
+          S
+        </label>
+
+        <label>
+          <input
+            name="tshirt-size"
+            type="radio"
+            value="M"
+          >
+          M
+        </label>
+
+        <label>
+          <input
+            name="tshirt-size"
+            type="radio"
+            value="L"
+          >
+          L
+        </label>
+
+        <label>
+          <input
+            name="tshirt-size"
+            type="radio"
+            value="XL"
+          >
+          XL
+        </label>
+
+        <label>
+          <input
+            name="tshirt-size"
+            type="radio"
+            value="XXL"
+          >
+          XXL
+        </label>
+      </fieldset>
+
+      <!-- SUBMIT -->
+      <button type="submit">Submit order</button>
+
+    </form>
+  </main>
+</body>
 </html>
